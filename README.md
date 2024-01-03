@@ -4,15 +4,15 @@ Gossip Chatting: Your go-to Android app for seamless, secure, and real-time mess
 
 ## Features
 
--Utilizes fragments for modular and efficient UI design.
--Implements real-time database for instant message updates.
--Leverages cloud database technology for seamless data storage and retrieval.
--Navigates through different app screens using a single, intuitive navigation graph.
--Ensures secure user authentication through Firebase Authentication.
--Employs RecyclerView for efficient and dynamic display of message lists.
--Integrates Glide library for smooth loading and caching of images.
--Enhances user experience with a customized side navigation drawer.
--Implements a custom action bar for a unique and branded app appearance.
+- Utilizes fragments for modular and efficient UI design.
+- Implements real-time database for instant message updates.
+- Leverages cloud database technology for seamless data storage and retrieval.
+- Navigates through different app screens using a single, intuitive navigation graph.
+- Ensures secure user authentication through Firebase Authentication.
+- Employs RecyclerView for efficient and dynamic display of message lists.
+- Integrates Glide library for smooth loading and caching of images.
+- Enhances user experience with a customized side navigation drawer.
+- Implements a custom action bar for a unique and branded app appearance.
 
 ## Screenshots
 
@@ -39,8 +39,8 @@ Gossip Chatting: Your go-to Android app for seamless, secure, and real-time mess
 1. Clone the repository:
 
     ```bash
-  https://github.com/Iamshivang/Gossip.git
-    ```
+https://github.com/Iamshivang/Gossip.git
+ ```
 
 2. Open the project in Android Studio.
 
