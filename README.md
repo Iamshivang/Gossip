@@ -40,7 +40,6 @@ Gossip Chatting: Your go-to Android app for seamless, secure, and real-time mess
 
     ```bash
 https://github.com/Iamshivang/Gossip.git
-    ```
 
 2. Open the project in Android Studio.
 
