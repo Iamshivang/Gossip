@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "130648563842",
+    "firebase_url": "https://gossip-d2458-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "gossip-d2458",
+    "storage_bucket": "gossip-d2458.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130648563842:android:7393b8d783b4e6c4ddd49b",
+        "android_client_info": {
+          "package_name": "com.example.gossip"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAunAdclTl2ux508gwveW5csYycRY0ZX5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.authentication.signupScreen.userDetails.UserDetailsFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="36dp">
+
+        <TextView
+            android:id="@+id/tv_signup_title"
+            style="@style/LabelStyle"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:text="Details"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/shade3" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            app:civ_border_color="@color/c3"
+            app:civ_border_width="3dp"
+            android:clickable="true"
+            android:id="@+id/iv_pic_preview"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/profile_pic_placeholder" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_name"
+            style="@style/EditTextStyle"
+            android:layout_marginTop="15dp"
+            android:hint="Name"
+            android:textColor="@color/primary"
+            android:inputType="textPersonName" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_bio"
+            style="@style/EditTextStyle"
+            android:layout_marginTop="15dp"
+            android:hint="Bio"
+            android:textColor="@color/primary"
+            android:inputType="text" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            style="@style/SolidButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_below="@id/et_confirm_pass"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/solid_bg_grd_purple"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/btn_signup"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:indeterminate="true"
+            android:layout_marginTop="40dp"
+            android:indeterminateTint="@color/primary"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</FrameLayout>

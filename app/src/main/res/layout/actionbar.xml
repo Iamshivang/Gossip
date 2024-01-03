@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary"
+    android:id="@+id/actionbar"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/segment_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/create_task_button"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/btnHam"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/asignee_dp"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:scaleY="0.8"-->
+<!--                android:layout_marginStart="2dp"-->
+<!--                android:scaleX="0.8"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_alignParentBottom="false"-->
+<!--                android:src="@drawable/apphd"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/create_task_button"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:text="Gossip"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnHam"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back_arrow"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/btnHam"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ham"
+            android:paddingTop="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+
+        <ImageButton
+            android:id="@+id/create_task_button"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="48dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@android:drawable/ic_input_add"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/new_changes_btn"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/create_task_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/baseline_camera_alt_24"
+            app:tint="@color/white" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="40dp"
+            android:id="@+id/notification_cont"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/create_task_button"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:id="@+id/notifications"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:src="@drawable/notifications"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/notificationCountET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_circle_bubble"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:gravity="center"
+                android:padding="2dp"
+                android:minWidth="18dp"
+                android:layout_marginTop="6dp"
+                android:text="150"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutworkspace"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnHam_workspace"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <!--            <de.hdodenhof.circleimageview.CircleImageView-->
+            <!--                android:id="@+id/asignee_dp"-->
+            <!--                android:layout_width="40dp"-->
+            <!--                android:scaleY="0.8"-->
+            <!--                android:layout_marginStart="2dp"-->
+            <!--                android:scaleX="0.8"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_alignParentTop="true"-->
+            <!--                android:layout_alignParentEnd="true"-->
+            <!--                android:layout_alignParentBottom="false"-->
+            <!--                android:src="@drawable/apphd"-->
+            <!--                app:layout_constraintEnd_toStartOf="@+id/create_task_button"-->
+            <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+
+            <TextView
+                android:id="@+id/workspace"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:text="Workspace"
+                android:textColor="@color/primary"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnHam"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <ImageView
+            android:id="@+id/btnHam_workspace"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ham"
+            android:paddingTop="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/primary" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/tabLayout"-->
+<!--        style="@style/CustomTabLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        app:tabGravity="center"-->
+<!--        android:background="@color/darkbg_main"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"-->
+<!--        app:tabIndicatorColor="@color/divider_or"-->
+<!--        app:tabMode="auto"-->
+<!--        android:layoutAnimation="@anim/layout_animation_fadein"-->
+<!--        app:tabIndicatorAnimationMode="fade"-->
+<!--        app:tabRippleColor="@color/item_bg_glow"-->
+<!--        app:tabSelectedTextColor="@color/primary"-->
+
+<!--        app:tabTextColor="@color/account" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/search_cont"
+        android:orientation="horizontal"
+        android:layout_height="55dp">
+
+        <!--        <include-->
+        <!--            layout="@layout/task_item_legend"-->
+        <!--            android:layout_height="55dp"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:elevation="5dp"-->
+        <!--            />-->
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/search_bar"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/item_bg_curve"
+            android:drawableStart="@drawable/ic_searchico"
+            android:paddingStart="15dp"
+            android:paddingBottom="1dp"
+            android:gravity="start|center_vertical"
+            android:hint="Search tasks, tags, etc."
+            android:textAllCaps="false"
+            android:textColorHint="@color/account"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:transitionName="searchActivityTransition"
+            android:textSize="18dp"
+            android:textColor="#DEE3E3E3"
+            android:drawableTint="#DEE3E3E3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="textAutoCorrect" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_gravity="center"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/item_bg_curve"
+
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_marginBottom="7dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/filter"
+            android:id="@+id/filterBtn"
+            app:tint="@color/primary" />
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/line"
+        android:background="@color/c3"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

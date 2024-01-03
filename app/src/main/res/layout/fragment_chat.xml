@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.mainHost.ChatFragment">
+
+    <include
+        android:id="@+id/i_actionbar"
+        layout="@layout/actionbar_user"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c0">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:layout_above="@+id/ll_message"
+            android:nestedScrollingEnabled="false"
+            android:paddingBottom="40dp"
+            tools:listitem="@layout/receive"
+            android:visibility="visible"
+            android:elevation="2dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:weightSum="100">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_message_box"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:hint="Type a message"
+                android:layout_marginStart="10dp"
+                android:padding="10dp"
+                android:layout_weight="89"
+                android:background="@drawable/message_box_bg"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_message"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_weight="20"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/send"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
